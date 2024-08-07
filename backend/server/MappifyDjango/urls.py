@@ -27,7 +27,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('MappifyApp.api_urls')),  # Ensure this is pointing to the correct api_urls module
-    path('', include('MappifyApp.urls')),  # Include the app-level urls if they exist
+    path('api/', include('mappify_server.api_urls')),  # Ensure this is pointing to the correct api_urls module
+    path('', include('mappify_server.urls')),  # Include the app-level urls if they exist
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

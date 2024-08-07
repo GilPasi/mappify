@@ -28,6 +28,6 @@ npx expo start
 
 To run server daemon, run: 
 conda activate dj 
-cd 
-python manage.py
+cd /mappify/backend/mappify-server
+python manage.py runserver 0.0.0.0:8000
 

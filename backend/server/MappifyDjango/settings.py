@@ -26,14 +26,14 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.0.0.2','10.0.0.5','10.0.2.2','192.168.222.115','192.168.195.115','192.168.1.102',
-                 '127.0.0.1','localhost', '192.168.194.115','10.200.66.207', '192.168.68.115']
+ALLOWED_HOSTS = ['10.0.0.2','10.0.0.5','10.0.2.2','192.168.222.115','192.168.195.115','192.168.1.102','192.168.1.113',
+                 '10.0.0.8','127.0.0.1','localhost', '192.168.194.115','10.200.66.207', '192.168.68.115']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'MappifyApp',
+    'mappify_server',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

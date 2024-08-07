@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/mappify-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,14 +18,18 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.gil-kevin.mappify",
+      "package": "com.doubleaka.mappifiy",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/mappify-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
-      "favicon": "./assets/mappify-icon.png"
+      "favicon": "./assets/icon.png"
     },
     "plugins": [
       [
@@ -35,16 +39,12 @@
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
           "recordAudioAndroid": true
         }
-      ],
-      [
-        "expo-font",
-        {
-          "fonts": {
-            "Inter-Black": "./assets/fonts/Inter-Black.otf",
-            "Alef-Bold": "./assets/fonts/Alef-Bold.ttf"
-          }
-        }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "19ca7c39-e5e9-454b-a349-69b2d72ca714"
+      }
+    }
   }
 }

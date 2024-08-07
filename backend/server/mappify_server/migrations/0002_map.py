@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('MappifyApp', '0001_initial'),
+        ('mappify_server', '0001_initial'),
     ]
 
     operations = [

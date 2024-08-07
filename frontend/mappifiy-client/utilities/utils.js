@@ -1,8 +1,8 @@
 
-const SERVER_IP = '10.0.0.5'
+const SERVER_IP = '10.0.0.8'
 
 export function getServerIp(){
-    return SERVER_IP
+    return SERVER_IP 
 }
 export function getSmartPhoneFps(){
     // May be replaced in the future if 
@@ -14,4 +14,4 @@ export function getSmartPhoneFps(){
 
 export function getBaseUrl(){
     return `http://${getServerIp()}:8000`
-}
+} 

@@ -48,6 +48,7 @@ def normalize_object_width(image: np.ndarray):
     FOCAL_WIDTH = 26
 
 
+
     middle_stripe_idx = len(image) // 2
 
     real_width_base_stripe = calculate_real_life_width(

@@ -158,7 +158,7 @@ def take_video_snapshots(video: cv2.VideoCapture, snapshot_interval:int, fps: in
 
     snapshots = []
     for i in range(0, snapshot_count):
-        logger.debug("frame taken "  + i * step_size)
+        logger.debug("frame taken "  + str(i * step_size))
         frame_number = i * step_size
         video.set(cv2.CAP_PROP_POS_FRAMES, frame_number)
         ret, frame = video.read()
