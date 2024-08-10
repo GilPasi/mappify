@@ -27,7 +27,7 @@ def get_default_input_path():
 
 def get_default_output_path():
     return os.path.join(
-        get_mappify_root_dir(), "backend","mappify-server","media", "maps") 
+        get_mappify_root_dir(), "backend","server","media", "maps") 
 
 def get_algorithm_dir():
     return os.path.join(get_mappify_root_dir(), "backend", "algorithm")
